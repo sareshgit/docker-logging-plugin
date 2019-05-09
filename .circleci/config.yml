@@ -1,0 +1,10 @@
+version: 2
+jobs:
+jobs:
+  build:
+    machine: true
+    steps:
+      - run:
+          name: unit tests
+          command: |
+            bash ./codeship/unit_tests.sh
