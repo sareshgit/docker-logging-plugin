@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-        name: unit tests
-        command: |
-          bash ./codeship/unit_tests.sh
+          name: unit tests
+          command: |
+            bash ./codeship/unit_tests.sh
 
