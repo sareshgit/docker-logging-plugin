@@ -11,6 +11,7 @@ jobs:
           command: |
             sudo apt-get update
             sudo apt-get install golang
+            export GOPATH=$HOME/go
             sudo go get github.com/Sirupsen/logrus
       - run:
           name: unit tests
