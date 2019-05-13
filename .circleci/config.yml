@@ -6,3 +6,10 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
+      - run:
+        name: unit tests
+        command: |
+          cd docker-logging-plugin
+          pwd
+          bash ./codeship/unit_tests.sh
+
