@@ -7,6 +7,10 @@ jobs:
     steps:
       - checkout
       - run:
+          name: go dependencies
+          command: |
+            sudo go get github.com/Sirupsen/logrus
+      - run:
           name: unit tests
           command: |
             bash ./codeship/unit_tests.sh
