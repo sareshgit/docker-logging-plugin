@@ -18,6 +18,16 @@ jobs:
           name: compile
           command: |
             bash ./codeship/compile.sh
+      - run: go get github.com/Sirupsen/logrus
+      - run: go get github.com/docker/docker/api/types/plugins/logdriver
+      - run: go get github.com/docker/docker/daemon/logger
+      - run: go get github.com/docker/docker/daemon/logger/jsonfilelog
+      - run: go get github.com/docker/docker/daemon/logger/loggerutils
+      - run: go get github.com/docker/docker/pkg/ioutils
+      - run: go get -d github.com/docker/go-plugins-helpers/sdk
+      - run: go get github.com/gogo/protobuf/io
+      - run: go get github.com/pkg/errors
+      - run: go get github.com/tonistiigi/fifo
       - run:
           name: unit tests
           command: |
