@@ -18,3 +18,7 @@ jobs:
           name: compile
           command: |
             bash ./codeship/compile.sh
+      - run:
+          name: unit tests
+          command: |
+            bash ./codeship/unit_tests.sh
