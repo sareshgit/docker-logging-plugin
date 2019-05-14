@@ -15,20 +15,6 @@ jobs:
           command: |
             echo 'export GOPATH="$HOME/go"' >> $BASH_ENV
       - run:
-          name: go stuff
-          command: |
-            echo $GOPATH
-      - run: go get github.com/Sirupsen/logrus
-      - run: go get github.com/docker/docker/api/types/plugins/logdriver
-      - run: go get github.com/docker/docker/daemon/logger
-      - run: go get github.com/docker/docker/daemon/logger/jsonfilelog
-      - run: go get github.com/docker/docker/daemon/logger/loggerutils
-      - run: go get github.com/docker/docker/pkg/ioutils
-      - run: go get github.com/docker/go-plugins-helpers
-      - run: go get github.com/gogo/protobuf/io
-      - run: go get github.com/pkg/errors
-      - run: go get github.com/tonistiigi/fifo
-      - run:
           name: unit tests
           command: |
             bash ./codeship/unit_tests.sh
