@@ -24,7 +24,7 @@ jobs:
       - run: go get github.com/docker/docker/daemon/logger/jsonfilelog
       - run: go get github.com/docker/docker/daemon/logger/loggerutils
       - run: go get github.com/docker/docker/pkg/ioutils
-      - run: go get github.com/docker/go-plugins-helpers/sdk
+      - run: go get github.com/docker/go-plugins-helpers
       - run: go get github.com/gogo/protobuf/io
       - run: go get github.com/pkg/errors
       - run: go get github.com/tonistiigi/fifo
