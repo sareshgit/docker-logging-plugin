@@ -15,6 +15,6 @@ jobs:
           command: |
             echo 'export GOPATH="$HOME/go"' >> $BASH_ENV
       - run:
-          name: unit tests
+          name: compile
           command: |
-            bash ./codeship/unit_tests.sh
+            bash ./codeship/compile.sh
